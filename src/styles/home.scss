@@ -12,6 +12,7 @@
     .author-info {
       margin-bottom: 3px;
       float: right;
+      width: 220px;
 
       .author {
         img {
@@ -33,23 +34,21 @@
 
     .post-info {
       .title {
-        font-size: 15px;
-        font-weight: bold;
+        font-size: unset;
+        font-weight: unset;
         text-decoration: none;
         vertical-align: middle;
+	padding-right: 20px;
       }
     }
 
     @media screen and (min-width: 721px) {
       .item {
-        // width: calc(50% - 20px);
-        // margin: 0 10px 20px;
         width: calc(100% - 20px);
         margin: 0 10px 0px;
         min-width: 200px;
         max-width: 100%;
         border: solid 1px var(--gg-border);
-        // border-radius: 5px;
         border-radius: 1px;
         overflow: hidden;
 
@@ -72,6 +71,8 @@
 
         .author-info {
           margin-bottom: 5px;
+	  float: none;
+	  width: auto;
         }
       }
     }
