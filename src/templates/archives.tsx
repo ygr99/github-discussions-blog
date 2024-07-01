@@ -28,7 +28,7 @@ export default function IndexPage(props: any) {
                   <Link className="title" to={`/issues/${node.number}`}>
                     {node.title}
                   </Link>
-		  <Category data={category} />
+{/* 		  <Category data={category} /> */}
                 </div>
               </div>
             );
