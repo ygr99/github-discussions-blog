@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-issues-tsx",
+    "path": "/issues/19",
+    "result": {"data":{"issuesJson":{"id":"c5d0b8c9-3a15-5dd2-82f6-0f8e6314d984","title":"把 Mysql表 的自增计数器重置为1","number":19,"bodyHTML":"<div class=\"highlight highlight-source-sql notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"ALTER TABLE table_name AUTO_INCREMENT = 1;\"><pre class=\"notranslate\"><span class=\"pl-k\">ALTER</span> <span class=\"pl-k\">TABLE</span> table_name AUTO_INCREMENT <span class=\"pl-k\">=</span> <span class=\"pl-c1\">1</span>;</pre></div>","updatedAt":"2024-07-01T08:12:04Z","upvoteCount":1,"author":{"login":"ygr99","avatarUrl":"https://avatars.githubusercontent.com/u/91876454?u=052cc43185ad921a4802c6778d5af7f49bc96c14&v=4","url":"https://github.com/ygr99"},"category":{"isAnswerable":false,"name":"数据库","emoji":":zap:"},"labels":{"edges":[]},"comments":{"edges":[]}}},"pageContext":{"number":19,"next":null}},
+    "staticQueryHashes": ["151096407","2861350382"]}

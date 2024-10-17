@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+  <title>RSS</title>
+  <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+  <link>/</link>
+  <description>GitHub Discussions</description>
+  <item>
+  <title><![CDATA[把 Mysql表 的自增计数器重置为1]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/19</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/19</guid>
+  <pubDate>2024-07-01</pubDate>
+  <description><![CDATA[<div class="highlight highlight-source-sql notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="ALTER TABLE table_name AUTO_INCREMENT = 1;"><pre class="notranslate"><span class="pl-k">ALTER</span> <span class="pl-k">TABLE</span> table_name AUTO_INCREMENT <span class="pl-k">=</span> <span class="pl-c1">1</span>;</pre></div>]]></description>
+</item>
+<item>
+  <title><![CDATA[油猴脚本：GitHubContributionsSelectThisYear]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/18</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/18</guid>
+  <pubDate>2024-06-30</pubDate>
+  <description><![CDATA[<p dir="auto"><strong>脚本名称</strong>：GitHubContributionsSelectYear</p>
+<p dir="auto"><strong>脚本内容</strong>：</p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="// ==UserScript==
+// @name         GitHub Contributions Select This Year
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Automatically selects the first year (2024) in the contributions dropdown on GitHub.
+// @author       Your Name
+// @match        https://github.com/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Your code here...
+    const selectElement = document.querySelector('.js-year-selector');
+    if (selectElement) {
+        selectElement.value = '2024'; // Set the value to 2024 (or any other desired year)
+        selectElement.dispatchEvent(new Event('change')); // Trigger the change event
+    }
+})();"><pre class="notranslate"><span class="pl-c">// ==UserScript==</span>
+<span class="pl-c">// @name         GitHub Contributions Select This Year</span>
+<span class="pl-c">// @namespace    http://tampermonkey.net/</span>
+<span class="pl-c">// @version      1.0</span>
+<span class="pl-c">// @description  Automatically selects the first year (2024) in the contributions dropdown on GitHub.</span>
+<span class="pl-c">// @author       Your Name</span>
+<span class="pl-c">// @match        https://github.com/*</span>
+<span class="pl-c">// @grant        none</span>
+<span class="pl-c">// ==/UserScript==</span>
+
+<span class="pl-kos">(</span><span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-s">'use strict'</span><span class="pl-kos">;</span>
+
+    <span class="pl-c">// Your code here...</span>
+    <span class="pl-k">const</span> <span class="pl-s1">selectElement</span> <span class="pl-c1">=</span> <span class="pl-smi">document</span><span class="pl-kos">.</span><span class="pl-en">querySelector</span><span class="pl-kos">(</span><span class="pl-s">'.js-year-selector'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">selectElement</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+        <span class="pl-s1">selectElement</span><span class="pl-kos">.</span><span class="pl-c1">value</span> <span class="pl-c1">=</span> <span class="pl-s">'2024'</span><span class="pl-kos">;</span> <span class="pl-c">// Set the value to 2024 (or any other desired year)</span>
+        <span class="pl-s1">selectElement</span><span class="pl-kos">.</span><span class="pl-en">dispatchEvent</span><span class="pl-kos">(</span><span class="pl-k">new</span> <span class="pl-v">Event</span><span class="pl-kos">(</span><span class="pl-s">'change'</span><span class="pl-kos">)</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// Trigger the change event</span>
+    <span class="pl-kos">}</span>
+<span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<p dir="auto">这个脚本会在访问GitHub页面时自动选择下拉框中的第一个年份（2024年）。请确保您已经安装了Tampermonkey浏览器扩展，并将此脚本添加到您的脚本列表中。<br>
+(白天再去打开电脑完善下)</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[手机 GitHub 使用]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/16</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/16</guid>
+  <pubDate>2024-06-28</pubDate>
+  <description><![CDATA[<p dir="auto">不是很想下手机版的 GitHub，因为：</p>
+<ul dir="auto">
+<li>在手机浏览器看GitHub项目的时候就会强制跳到应用上</li>
+<li>电脑上GitHub会让手机二次登录</li>
+<li>上次下了用了几天就卸了</li>
+</ul>
+<p dir="auto">为什么现在又下载使用呢？</p>
+<ul dir="auto">
+<li>下班后很少碰电脑，更别说写代码了，手机上下个GitHub可以集中的刷刷</li>
+<li>提交一些简单的文件等（例如这个随记）</li>
+</ul>]]></description>
+</item>
+<item>
+  <title><![CDATA[四字韵律：日志杂记模块新命名(AI)]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/17</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/17</guid>
+  <pubDate>2024-06-28</pubDate>
+  <description><![CDATA[<p dir="auto">日志杂记模块名称，用 AI 改成4字词语（更富有诗意和韵律感的四字短语来概括），以下是对比：</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>之前</th>
+<th>修改后</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网页软件</td>
+<td>网韵技径</td>
+<td>网页软件技术教程的诗意表达</td>
+</tr>
+<tr>
+<td>文章视频音乐句子</td>
+<td>文韵影律</td>
+<td>文章、视频、音乐、句子的综合表达</td>
+</tr>
+<tr>
+<td>学习生活</td>
+<td>今日心语</td>
+<td>每日学习生活的感悟与记录</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">示例图片：（ps:竟然可以上传图片）<br>
+ <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/91876454/344251033-608000cb-fb17-4a11-979a-56724c1addac.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkxOTY2MzYsIm5iZiI6MTcyOTE5NjMzNiwicGF0aCI6Ii85MTg3NjQ1NC8zNDQyNTEwMzMtNjA4MDAwY2ItZmIxNy00YTExLTk3OWEtNTY3MjRjMWFkZGFjLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE3VDIwMTg1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIyNWU3NWFlYzY5ZDRmOGVmOGU4OWJmYWU0NTAxNzFmYTNmZjdjZDU1MzJkOTU2NTE5NGNjNGI2MTFlNzhhZWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wspdUEOB-y8foZZhQDaCmF-4n5SNX_gr-ROTCVABy_Y"><img src="https://private-user-images.githubusercontent.com/91876454/344251033-608000cb-fb17-4a11-979a-56724c1addac.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjkxOTY2MzYsIm5iZiI6MTcyOTE5NjMzNiwicGF0aCI6Ii85MTg3NjQ1NC8zNDQyNTEwMzMtNjA4MDAwY2ItZmIxNy00YTExLTk3OWEtNTY3MjRjMWFkZGFjLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDE3VDIwMTg1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIyNWU3NWFlYzY5ZDRmOGVmOGU4OWJmYWU0NTAxNzFmYTNmZjdjZDU1MzJkOTU2NTE5NGNjNGI2MTFlNzhhZWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wspdUEOB-y8foZZhQDaCmF-4n5SNX_gr-ROTCVABy_Y" alt="Screenshot_2024-06-29-00-51-39-73_8c810da05db95dea41b35b167cff050e.jpg" style="max-width: 100%;"></a></p>]]></description>
+</item>
+<item>
+  <title><![CDATA[2024年1月新番最全版收看指南（共57部附时间和介绍）]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/15</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/15</guid>
+  <pubDate>2024-01-12</pubDate>
+  <description><![CDATA[<p dir="auto">原文链接：<a href="https://mp.weixin.qq.com/s/j7hq-xIqHK9ZYfSYJ25EQA" rel="nofollow">https://mp.weixin.qq.com/s/j7hq-xIqHK9ZYfSYJ25EQA</a></p>
+<p dir="auto">《憧憬成为魔法少女》<br>
+《香格里拉・开拓异境~粪作猎手挑战神作》<br>
+《秒杀外挂太强了，异世界的家伙们根本就不是对手》</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[Vivaldi 浏览器 Bug 好多]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/14</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/14</guid>
+  <pubDate>2023-12-10</pubDate>
+  <description><![CDATA[<p dir="auto"><strong>Vivaldi 浏览器 Bug 好多</strong></p>]]></description>
+</item>
+<item>
+  <title><![CDATA[GitHub 项目回退到之前的某个版本]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/13</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/13</guid>
+  <pubDate>2023-12-10</pubDate>
+  <description><![CDATA[<p dir="auto">在GitHub上回退到之前的某个版本，可以通过以下步骤来实现：</p>
+<ol dir="auto">
+<li>
+<p dir="auto"><strong>找到 commit ID：</strong> 打开你的项目仓库页面，点击 "Commits"（在代码页面的上方导航栏中），找到你要回退到的版本。每个提交都有一个唯一的 commit ID（一长串的哈希值），复制你想要回退的版本的 commit ID。</p>
+</li>
+<li>
+<p dir="auto"><strong>在本地仓库执行回退操作：</strong> 打开命令行终端，进入你的本地项目目录，然后运行以下命令：</p>
+</li>
+</ol>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="git reset --hard commit_ID"><pre class="notranslate">git reset --hard commit_ID</pre></div>
+<p dir="auto">将 <code class="notranslate">commit_ID</code> 替换为你复制的实际 commit ID。</p>
+<ol start="3" dir="auto">
+<li><strong>强制推送到远程仓库：</strong> 因为你已经修改了本地仓库的历史记录，你需要使用强制推送将这些更改同步到远程仓库。运行以下命令：</li>
+</ol>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="git push origin master --force"><pre class="notranslate">git push origin master --force</pre></div>
+<p dir="auto">如果你在其他分支上工作，将 <code class="notranslate">master</code> 替换为你当前的分支名。</p>
+<p dir="auto">请注意：</p>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong>谨慎使用强制推送：</strong> 强制推送将覆盖远程仓库中的历史记录，可能会导致其他协作者的问题。确保你和团队都了解你要执行的操作，并协调好。</p>
+</li>
+<li>
+<p dir="auto"><strong>备份重要更改：</strong> 在执行回退之前，建议创建一个新的分支或备份当前分支，以便稍后可以轻松地回到之前的状态。</p>
+</li>
+<li>
+<p dir="auto"><strong>注意历史记录：</strong> Git 的历史记录是项目的重要组成部分，谨慎处理历史记录的更改，以避免潜在的问题。</p>
+</li>
+</ul>]]></description>
+</item>
+<item>
+  <title><![CDATA[打算每天在 github-discussions-blog 上写写]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/8</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/8</guid>
+  <pubDate>2023-11-23</pubDate>
+  <description><![CDATA[<blockquote>
+<p dir="auto">1.我的文笔贼差劲！<br>
+2.我的性格比较内向，不找我聊天我就不说话的；没什么朋友，对外交流很少（这里可以多一个分享的地方）。<br>
+3. 这里记录很方便，所以可以挑战一手每天写写</p>
+</blockquote>
+<h3 dir="auto">介绍</h3>
+<p dir="auto">你好，我是一个人丶99。决定<strong>每天在这里写写</strong>。我想通过这个形式来记录一些东西，例如我的日志、学习、随记、成长等。<br>
+对外发布的东西跟自己记录的还是不一样的，而不同的平台对外发布又是不一样的，在这里的感觉是很方便，所以希望自己可以坚持！<br>
+希望提高自己的写作能力，分享有价值的内容</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[github-discussions-blog 有人回复欸，我都快忘了这个了；这2天开始重用 FlowUs 笔记，有日记分享，这里可能不会咋用了]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/12</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/12</guid>
+  <pubDate>2023-11-23</pubDate>
+  <description><![CDATA[<h2 dir="auto">大佬回复</h2>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/09f710ef37ddc6834fcdcf8adc1f2e794137478e07594075e0cd2fbf61061c0f/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313730303731353238393036382e706e67"><img src="https://camo.githubusercontent.com/09f710ef37ddc6834fcdcf8adc1f2e794137478e07594075e0cd2fbf61061c0f/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313730303731353238393036382e706e67" alt="1700715289068.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1700715289068.png" style="max-width: 100%;"></a></p>
+<h2 dir="auto">FlowUs 日记（即日志脱敏版）</h2>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/575a3b133c052e80fcb59146deab102338ddeac38d457cdb00eae8b3852bc3fa/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313730303731353334303639382e706e67"><img src="https://camo.githubusercontent.com/575a3b133c052e80fcb59146deab102338ddeac38d457cdb00eae8b3852bc3fa/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313730303731353334303639382e706e67" alt="1700715340698.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1700715340698.png" style="max-width: 100%;"></a></p>
+<h2 dir="auto">2023年11月21日周二48周</h2>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/4a5df991434ee1f0fff82a76163c3a7cc9f6ec83375b9541f9a3b76e61b850a6/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313730303731353337383739362e706e67"><img src="https://camo.githubusercontent.com/4a5df991434ee1f0fff82a76163c3a7cc9f6ec83375b9541f9a3b76e61b850a6/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313730303731353337383739362e706e67" alt="1700715378796.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1700715378796.png" style="max-width: 100%;"></a></p>]]></description>
+</item>
+<item>
+  <title><![CDATA[阿里云服务器带宽多少如何查看?]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/11</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/11</guid>
+  <pubDate>2023-11-14</pubDate>
+  <description><![CDATA[<ol dir="auto">
+<li>进入服务器实例的详情页面，找到"带宽”选项，单击“续费/升级”。</li>
+<li>在“续费/升级”页面中，可以看到当前服务器的带宽情况。如</li>
+</ol>]]></description>
+</item>
+<item>
+  <title><![CDATA[夜猫子生活揭秘：我连续两年凌晨3点入眠的日常]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/10</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/10</guid>
+  <pubDate>2023-11-13</pubDate>
+  <description><![CDATA[<p dir="auto">熬夜，刷手机！</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[其他 GitHub Discussions 站点]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/9</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/9</guid>
+  <pubDate>2023-11-12</pubDate>
+  <description><![CDATA[<ol dir="auto">
+<li>维燕的知识花园：All in Discussions 的个人知识花园，没事写写文章</li>
+</ol>
+<ul dir="auto">
+<li>Discussions 链接：<a href="https://github.com/shenweiyan/Knowledge-Garden/discussions">https://github.com/shenweiyan/Knowledge-Garden/discussions</a></li>
+</ul>]]></description>
+</item>
+<item>
+  <title><![CDATA[连续来图书馆3周了；但看似很努力，其实没学到什么东西！]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/7</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/7</guid>
+  <pubDate>2023-11-12</pubDate>
+  <description><![CDATA[<p dir="auto">第一周：用户中心项目 - 鱼皮<br>
+跟着七期视频来的，每天一期，差不多能完成！但是没部署！</p>
+<p dir="auto">第二周：算法❌Redis❌<br>
+算法集中学了2天，太难了，就去学Redis了，看了几天视频！这周是很颓废的</p>
+<p dir="auto">第三周 API开放平台项目 - 鱼皮<br>
+前面几期跟着视频敲前后端项目，后面就光看视频了！</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[基于 GitHub Discussions 的博客站点（简约，便捷）：GG 教程]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/6</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/6</guid>
+  <pubDate>2023-11-09</pubDate>
+  <description><![CDATA[<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/24761f2a8b5284de589e105a2b7a50537375b756b6dd3445480e095ae045c999/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532313831393138362e706e67"><img src="https://camo.githubusercontent.com/24761f2a8b5284de589e105a2b7a50537375b756b6dd3445480e095ae045c999/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532313831393138362e706e67" alt="1699521819186.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1699521819186.png" style="max-width: 100%;"></a></p>
+<h1 dir="auto">介绍 GG</h1>
+<blockquote>
+<p dir="auto"><strong>GG: A gatsby website builder based on github discussions</strong><br>
+Github：<a href="https://github.com/lencx/gg">https://github.com/lencx/gg</a><br>
+网站：<a href="https://gg.nofwl.com" rel="nofollow">https://gg.nofwl.com</a></p>
+</blockquote>
+<ul dir="auto">
+<li><a href="https://github.com/lencx/gg/discussions/4">关于 GG</a></li>
+<li><a href="https://github.com/lencx/gg/discussions/5">快速开始</a></li>
+</ul>
+<h2 dir="auto">部署</h2>
+<h3 dir="auto">Step1：fork 项目</h3>
+<p dir="auto"><a href="https://github.com/lencx/gg">点击项目</a> 右上角的 Fork 按钮，fork 后，可以对仓库进行重命名，修改成自己喜欢的名称。</p>
+<h3 dir="auto">Step2：开启 Discussions</h3>
+<p dir="auto">Settings -&gt; General -&gt; Features -&gt; Discussions</p>
+<h3 dir="auto">Step3：创建配置</h3>
+<p dir="auto">在 Discussions -&gt; New discussion 中新增一个标题为 rgd.yml 的 issues，并在内容框中输入以下代码：</p>
+<h4 dir="auto">简单配置：</h4>
+<blockquote>
+<p dir="auto">我试了这个，别的没试</p>
+</blockquote>
+<div class="highlight highlight-source-yaml notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="# github 用户名
+owner: rwasm
+# github 仓库名称
+repo: rwasm.github.io
+
+website:
+  logo: https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png
+  # 网站标题
+  title: GG
+  description: Webassembly resources, tools, and related blogs, etc.
+
+manifest:
+  name: GG
+  short_name: GG
+  start_url: /
+  background_color: '#fafafa'
+  theme_color: '#232629'
+  display: standalone
+  icon: https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png
+"><pre class="notranslate"><span class="pl-c"><span class="pl-c">#</span> github 用户名</span>
+<span class="pl-ent">owner</span>: <span class="pl-s">rwasm</span>
+<span class="pl-c"><span class="pl-c">#</span> github 仓库名称</span>
+<span class="pl-ent">repo</span>: <span class="pl-s">rwasm.github.io</span>
+
+<span class="pl-ent">website</span>:
+  <span class="pl-ent">logo</span>: <span class="pl-s">https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png</span>
+  <span class="pl-c"><span class="pl-c">#</span> 网站标题</span>
+  <span class="pl-ent">title</span>: <span class="pl-s">GG</span>
+  <span class="pl-ent">description</span>: <span class="pl-s">Webassembly resources, tools, and related blogs, etc.</span>
+
+<span class="pl-ent">manifest</span>:
+  <span class="pl-ent">name</span>: <span class="pl-s">GG</span>
+  <span class="pl-ent">short_name</span>: <span class="pl-s">GG</span>
+  <span class="pl-ent">start_url</span>: <span class="pl-s">/</span>
+  <span class="pl-ent">background_color</span>: <span class="pl-s"><span class="pl-pds">'</span>#fafafa<span class="pl-pds">'</span></span>
+  <span class="pl-ent">theme_color</span>: <span class="pl-s"><span class="pl-pds">'</span>#232629<span class="pl-pds">'</span></span>
+  <span class="pl-ent">display</span>: <span class="pl-s">standalone</span>
+  <span class="pl-ent">icon</span>: <span class="pl-s">https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png</span>
+</pre></div>
+<h4 dir="auto">完整配置：</h4>
+<div class="highlight highlight-source-yaml notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="
+```yml
+### 必须配置
+# github 用户名，支持个人或组织
+owner: lencx
+# github 仓库名称
+repo: gg
+
+### 可选配置，如果 type 为 `issues` 类型，才需要以下配置
+# type: `issues` | `discussions` | `discussions2`, default is `discussions`
+# discussions：表示需要写 discussions 的仓库与 fork 此项目的仓库为同一个
+# discussions2：表示需要写 discussions 的仓库与 fork 此项目的仓库彼此独立
+type: issues
+issues-owner: &lt;github_owner&gt;
+issues-repo: &lt;github_repo&gt;
+# state: `open` or `closed`, default is `all`
+issues-state: closed
+
+### 可选配置，如果 type 为 `discussions2` 类型，才需要以下配置
+# type: `issues` | `discussions` | `discussions2`, default is `discussions`
+type: discussions2
+# 写 discussions 的用户名及仓库名
+dis-owner: &lt;github_owner&gt;
+dis-repo: &lt;github_repo&gt;
+
+### 域名配置
+# 个人域名，如果没有则不需要设置
+# 默认使用 github 二级域名，即 https://&lt;owner&gt;.github.io/&lt;repo&gt;
+cname: gg.nofwl.com
+
+### website 配置
+website:
+  # 1. 格式为 png 的 240x240 正方形图片
+  # 2. 在线图片 URL 地址，不设置则使用默认 logo
+  logo: https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png
+  # 网站标题
+  title: GG
+  # 网站描述
+  description: A gatsby website builder based on github discussions
+
+### PWA Manifest 配置
+# https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest
+manifest:
+  name: GG
+  short_name: GG
+  start_url: /
+  background_color: '#fafafa'
+  theme_color: '#232629'
+  display: standalone
+  # 1. 格式为 png 的 240x240 正方形图片
+  # 2. 在线图片 URL 地址，不设置则使用默认 logo
+  icon: https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png"><pre class="notranslate"><span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span>yml</span>
+<span class="pl-s">### 必须配置</span>
+<span class="pl-s"># github 用户名，支持个人或组织</span>
+<span class="pl-s">owner: lencx</span>
+<span class="pl-s"># github 仓库名称</span>
+<span class="pl-s">repo: gg</span>
+<span class="pl-s"></span>
+<span class="pl-s">### 可选配置，如果 type 为 <span class="pl-pds">`</span></span><span class="pl-s">issues` 类型，才需要以下配置</span>
+<span class="pl-c"><span class="pl-c">#</span> type: `issues` | `discussions` | `discussions2`, default is `discussions`</span>
+<span class="pl-c"><span class="pl-c">#</span> discussions：表示需要写 discussions 的仓库与 fork 此项目的仓库为同一个</span>
+<span class="pl-c"><span class="pl-c">#</span> discussions2：表示需要写 discussions 的仓库与 fork 此项目的仓库彼此独立</span>
+<span class="pl-ent">type</span>: <span class="pl-s">issues</span>
+<span class="pl-ent">issues-owner</span>: <span class="pl-s">&lt;github_owner&gt;</span>
+<span class="pl-ent">issues-repo</span>: <span class="pl-s">&lt;github_repo&gt;</span>
+<span class="pl-c"><span class="pl-c">#</span> state: `open` or `closed`, default is `all`</span>
+<span class="pl-ent">issues-state</span>: <span class="pl-s">closed</span>
+
+<span class="pl-c"><span class="pl-c">#</span>## 可选配置，如果 type 为 `discussions2` 类型，才需要以下配置</span>
+<span class="pl-c"><span class="pl-c">#</span> type: `issues` | `discussions` | `discussions2`, default is `discussions`</span>
+<span class="pl-ent">type</span>: <span class="pl-s">discussions2</span>
+<span class="pl-c"><span class="pl-c">#</span> 写 discussions 的用户名及仓库名</span>
+<span class="pl-ent">dis-owner</span>: <span class="pl-s">&lt;github_owner&gt;</span>
+<span class="pl-ent">dis-repo</span>: <span class="pl-s">&lt;github_repo&gt;</span>
+
+<span class="pl-c"><span class="pl-c">#</span>## 域名配置</span>
+<span class="pl-c"><span class="pl-c">#</span> 个人域名，如果没有则不需要设置</span>
+<span class="pl-c"><span class="pl-c">#</span> 默认使用 github 二级域名，即 https://&lt;owner&gt;.github.io/&lt;repo&gt;</span>
+<span class="pl-ent">cname</span>: <span class="pl-s">gg.nofwl.com</span>
+
+<span class="pl-c"><span class="pl-c">#</span>## website 配置</span>
+<span class="pl-ent">website</span>:
+  <span class="pl-c"><span class="pl-c">#</span> 1. 格式为 png 的 240x240 正方形图片</span>
+  <span class="pl-c"><span class="pl-c">#</span> 2. 在线图片 URL 地址，不设置则使用默认 logo</span>
+  <span class="pl-ent">logo</span>: <span class="pl-s">https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png</span>
+  <span class="pl-c"><span class="pl-c">#</span> 网站标题</span>
+  <span class="pl-ent">title</span>: <span class="pl-s">GG</span>
+  <span class="pl-c"><span class="pl-c">#</span> 网站描述</span>
+  <span class="pl-ent">description</span>: <span class="pl-s">A gatsby website builder based on github discussions</span>
+
+<span class="pl-c"><span class="pl-c">#</span>## PWA Manifest 配置</span>
+<span class="pl-c"><span class="pl-c">#</span> https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest</span>
+<span class="pl-ent">manifest</span>:
+  <span class="pl-ent">name</span>: <span class="pl-s">GG</span>
+  <span class="pl-ent">short_name</span>: <span class="pl-s">GG</span>
+  <span class="pl-ent">start_url</span>: <span class="pl-s">/</span>
+  <span class="pl-ent">background_color</span>: <span class="pl-s"><span class="pl-pds">'</span>#fafafa<span class="pl-pds">'</span></span>
+  <span class="pl-ent">theme_color</span>: <span class="pl-s"><span class="pl-pds">'</span>#232629<span class="pl-pds">'</span></span>
+  <span class="pl-ent">display</span>: <span class="pl-s">standalone</span>
+  <span class="pl-c"><span class="pl-c">#</span> 1. 格式为 png 的 240x240 正方形图片</span>
+  <span class="pl-c"><span class="pl-c">#</span> 2. 在线图片 URL 地址，不设置则使用默认 logo</span>
+  <span class="pl-ent">icon</span>: <span class="pl-s">https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png</span></pre></div>
+<p dir="auto">配置参考：</p>
+<p dir="auto"><a href="https://github.com/fe-cool/hunter/discussions/2">https://github.com/fe-cool/hunter/discussions/2</a><br>
+<a href="https://github.com/rwasm/rwasm.github.io/discussions/2">https://github.com/rwasm/rwasm.github.io/discussions/2</a><br>
+<a href="https://github.com/lencx/gg/discussions/2">https://github.com/lencx/gg/discussions/2</a></p>
+<h3 dir="auto">Step4：生成 Token</h3>
+<p dir="auto"><a href="https://github.com/settings/tokens">生成 Token</a></p>
+<p dir="auto">New personal access token<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/4f0fd051b0a79837933c62270c92c5a8d2d8c05aaaaad8d7c584311e19701ffa/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532303532303431362e706e67"><img src="https://camo.githubusercontent.com/4f0fd051b0a79837933c62270c92c5a8d2d8c05aaaaad8d7c584311e19701ffa/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532303532303431362e706e67" alt="1699520520416.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1699520520416.png" style="max-width: 100%;"></a></p>
+<p dir="auto">Note - 备注随便输入，主要做标识<br>
+Expiration：No expiration - 过期时间看需要，这里选择不过期<br>
+Select scopes: workflow - 只需要勾选 workflow<br>
+点击 Generate token 按钮，然后复制生成好的 Token</p>
+<h2 dir="auto">构建</h2>
+<p dir="auto">点击 Actions Tab 项，在 All workflows 中选择 github pages，点击 Enable workflow，每隔一小时会自动触发一次构建。当自动构建过一次之后，会在 github pages 下产生记录，点击最新一条记录，会看到 Re-run all jobs 按钮，点击它就可以手动执行构建。（我是新创建了一条 Discussions 出现了这个）<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/159691189-ea7c88ea-c0a7-49ba-8128-3da2648a8d1e.png"><img src="https://user-images.githubusercontent.com/16164244/159691189-ea7c88ea-c0a7-49ba-8128-3da2648a8d1e.png" alt="" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/159640201-9a8b6229-861e-4664-8ff8-0b8438c19cf8.png"><img src="https://user-images.githubusercontent.com/16164244/159640201-9a8b6229-861e-4664-8ff8-0b8438c19cf8.png" alt="" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/159640200-19d25bad-0b14-4a69-a547-e9584125074c.png"><img src="https://user-images.githubusercontent.com/16164244/159640200-19d25bad-0b14-4a69-a547-e9584125074c.png" alt="" style="max-width: 100%;"></a></p>
+<h3 dir="auto">开启 github pages</h3>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b6ee8e9323db7cb013cc26c3546c649546cefd91a3f9a5c6f9557d7cf327f064/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532303833323535302e706e67"><img src="https://camo.githubusercontent.com/b6ee8e9323db7cb013cc26c3546c649546cefd91a3f9a5c6f9557d7cf327f064/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532303833323535302e706e67" alt="1699520832550.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1699520832550.png" style="max-width: 100%;"></a></p>
+<p dir="auto">就可以看到访问站点了！<br>
+之后每次增加Discussions，相当于增加一条文章！ （同时修改很方便）<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7b0dd0ad66510ea14b5fcf99baea0332774495ecf7c0073862a4d1f03884da27/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532313333393931332e706e67"><img src="https://camo.githubusercontent.com/7b0dd0ad66510ea14b5fcf99baea0332774495ecf7c0073862a4d1f03884da27/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532313333393931332e706e67" alt="1699521339913.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1699521339913.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/49ca2564edbc674c16d5dde511bf4c0ec202c82a20b8b664f5ccc24b70c73484/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532313435393931392e706e67"><img src="https://camo.githubusercontent.com/49ca2564edbc674c16d5dde511bf4c0ec202c82a20b8b664f5ccc24b70c73484/68747470733a2f2f79677239392e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f75746f6f6c732f313639393532313435393931392e706e67" alt="1699521459919.png" data-canonical-src="https://ygr99.oss-cn-shenzhen.aliyuncs.com/utools/1699521459919.png" style="max-width: 100%;"></a></p>]]></description>
+</item>
+<item>
+  <title><![CDATA[回归内容本身：使用 GitHub 讨论构建个人博客]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/5</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/5</guid>
+  <pubDate>2023-11-09</pubDate>
+  <description><![CDATA[<p dir="auto">凌晨看到了这个：<a href="https://github.com/lencx/gg">lencx/gg: 🦄 GG (Gatsby + GitHub) - A gatsby website builder based on github discussions</a><br>
+刚好没带耳机，折腾下！</p>
+<p dir="auto">我折腾个人的站点(博客)，从Hexo … 很多太多的时间和精力都花费到 Theme/Html/CSS 的装潢上面了。内容才是核心，老老实实回归最简单的 Issues 和 Discussions 已经足够，另外，需要知道的是，博客其实就是写给自己看的，什么 SEO 流量、关注度、知名度还是需要一颗随缘的心态。</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[Welcome to github-discussions-blog !（基于 GitHub Discussions 的站点）]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/2</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/2</guid>
+  <pubDate>2023-11-09</pubDate>
+  <description><![CDATA[<p dir="auto">项目来自：<a href="https://github.com/lencx/gg">lencx/gg: 🦄 GG (Gatsby + GitHub) - A gatsby website builder based on github discussions</a></p>]]></description>
+</item>
+<item>
+  <title><![CDATA[调整首页 文章 item 样式]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/4</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/4</guid>
+  <pubDate>2023-11-09</pubDate>
+  <description><![CDATA[<blockquote>
+<p dir="auto">参考 <a href="https://shenweiyan.github.io/gg-discussions" rel="nofollow">https://shenweiyan.github.io/gg-discussions</a><br>
+Github：<a href="https://github.com/shenweiyan/gg-discussions">shenweiyan/gg-discussions</a></p>
+</blockquote>
+<p dir="auto">原来：<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9385b6f524dc5842dbd6e2f121652bb12a5e743b580b3861605ce7ca200bcc01/68747470733a2f2f77616e676775616e6a696e676a692e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f706963747572652f313639393531343238343132342e706e67"><img src="https://camo.githubusercontent.com/9385b6f524dc5842dbd6e2f121652bb12a5e743b580b3861605ce7ca200bcc01/68747470733a2f2f77616e676775616e6a696e676a692e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f706963747572652f313639393531343238343132342e706e67" alt="1699514284124.png" data-canonical-src="https://wangguanjingji.oss-cn-beijing.aliyuncs.com/picture/1699514284124.png" style="max-width: 100%;"></a></p>
+<p dir="auto">修改后效果：<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1df20139c5fb2bf7a6af7fd27874290ce70513f7220e04ab29082b8f52e63b09/68747470733a2f2f77616e676775616e6a696e676a692e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f706963747572652f313639393531343235383733322e706e67"><img src="https://camo.githubusercontent.com/1df20139c5fb2bf7a6af7fd27874290ce70513f7220e04ab29082b8f52e63b09/68747470733a2f2f77616e676775616e6a696e676a692e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f706963747572652f313639393531343235383733322e706e67" alt="1699514258732.png" data-canonical-src="https://wangguanjingji.oss-cn-beijing.aliyuncs.com/picture/1699514258732.png" style="max-width: 100%;"></a></p>
+<p dir="auto">方式：<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cb9691bc622eadc9edd67f85fdd5c80fe6b278db9d647320541faedfca42a96e/68747470733a2f2f77616e676775616e6a696e676a692e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f706963747572652f313639393531343232353635382e706e67"><img src="https://camo.githubusercontent.com/cb9691bc622eadc9edd67f85fdd5c80fe6b278db9d647320541faedfca42a96e/68747470733a2f2f77616e676775616e6a696e676a692e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f706963747572652f313639393531343232353635382e706e67" alt="1699514225658.png" data-canonical-src="https://wangguanjingji.oss-cn-beijing.aliyuncs.com/picture/1699514225658.png" style="max-width: 100%;"></a></p>]]></description>
+</item>
+<item>
+  <title><![CDATA[关于 GG：Gatsby + GitHub （基于 GitHub Discussions 的站点）]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/3</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/3</guid>
+  <pubDate>2023-11-09</pubDate>
+  <description><![CDATA[<blockquote>
+<p dir="auto">GG: Gatsby + GitHub</p>
+</blockquote>
+<p dir="auto"><a href="https://github.com/lencx/gg/discussions/4">关于 GG</a><br>
+<a href="https://github.com/lencx/gg/discussions/5">快速开始</a></p>
+<h1 dir="auto">关于 GG</h1>
+<p dir="auto">背景<br>
+我想要一个可以实时编辑文章的在线 IDE，支持分类，标签，多编程语言，评论互动及问答模式。发文也不需要受到平台的审核及约束，综合考虑下来决定基于 GitHub 来打造一个社区。同样的事情，我希望可以只用做一次，然后可以无限复用这种能力。所以我选择将它开源，并且完全基于 GitHub 所提供的能力来实现。</p>
+<p dir="auto">技术栈<br>
+<a href="https://www.gatsbyjs.com/" rel="nofollow">Gatsby.js</a> - 一个基于 React 的免费、开源框架，用于帮助开发者构建运行速度极快的网站和应用程序<br>
+<a href="https://github.com/lencx/rgd">lencx/rgd</a> - 一个命令行工具，可以将 <a href="https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions">GitHub Discussions API</a> 生成 RSS 和 JSON 文件<br>
+GitHub Discussions API - 通过接口查询数据<br>
+<a href="https://pages.github.com/">GitHub Pages</a> - 网站部署<br>
+<a href="https://docs.github.com/en/actions/using-workflows/triggering-a-workflow">GitHub Actions workflow</a> - 定时任务，自动构建，及部署等<br>
+<a href="https://web.dev/progressive-web-apps/" rel="nofollow">PWA</a> - 渐进式 Web 应用程序<br>
+<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" rel="nofollow">响应式</a> - 同时支持桌面端，及移动端<br>
+工作原理<br>
+lencx/rgd 从 Discussions API 中获取数据生成的 JSON 文件，会通过 Gatsby.js 的 gatsby-transformer-json 插件解析生成 GraphQL 数据作为网站数据源，用来渲染页面。GitHub Actions 每天会定时跑任务，从 GitHub Discussions 获取最新数据变更，重新对网站进行构建，并将其推送到 GitHub Pages。</p>
+<p dir="auto">部署<br>
+这个项目推荐的方式是配合 GitHub Actions 每天定时同步 Discussions 中的数据，将其构建后推送到 GitHub Pages。但是您也可以选择部署到其他平台。需要进行如下步骤：</p>
+<p dir="auto">yarn deploy<br>
+将生成的 public 目录部署到其平台。</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[rgd.yml]]></title>
+  <link>https://github.com/ygr99/github-discussions-blog/discussions/1</link>
+  <guid isPermaLink="false">https://github.com/ygr99/github-discussions-blog/discussions/1</guid>
+  <pubDate>2023-11-09</pubDate>
+  <description><![CDATA[<div class="highlight highlight-source-yaml notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="owner: ygr99
+repo: github-discussions-blog
+
+website:
+  logo: https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png
+  title: 一个人丶99
+  description: A gatsby website builder based on github discussions
+
+manifest:
+  name: GG
+  short_name: GG
+  start_url: /
+  background_color: '#fafafa'
+  theme_color: '#232629'
+  display: standalone
+  icon: https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png"><pre class="notranslate"><span class="pl-ent">owner</span>: <span class="pl-s">ygr99</span>
+<span class="pl-ent">repo</span>: <span class="pl-s">github-discussions-blog</span>
+
+<span class="pl-ent">website</span>:
+  <span class="pl-ent">logo</span>: <span class="pl-s">https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png</span>
+  <span class="pl-ent">title</span>: <span class="pl-s">一个人丶99</span>
+  <span class="pl-ent">description</span>: <span class="pl-s">A gatsby website builder based on github discussions</span>
+
+<span class="pl-ent">manifest</span>:
+  <span class="pl-ent">name</span>: <span class="pl-s">GG</span>
+  <span class="pl-ent">short_name</span>: <span class="pl-s">GG</span>
+  <span class="pl-ent">start_url</span>: <span class="pl-s">/</span>
+  <span class="pl-ent">background_color</span>: <span class="pl-s"><span class="pl-pds">'</span>#fafafa<span class="pl-pds">'</span></span>
+  <span class="pl-ent">theme_color</span>: <span class="pl-s"><span class="pl-pds">'</span>#232629<span class="pl-pds">'</span></span>
+  <span class="pl-ent">display</span>: <span class="pl-s">standalone</span>
+  <span class="pl-ent">icon</span>: <span class="pl-s">https://user-images.githubusercontent.com/16164244/162659556-64dd7da8-321f-4525-bbbf-975f02b4800f.png</span></pre></div>]]></description>
+</item>
+
+</channel>
+</rss>
