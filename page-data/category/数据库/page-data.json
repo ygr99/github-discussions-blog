@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-tsx",
+    "path": "/category/数据库",
+    "result": {"data":{"allDiscussionsJson":{"nodes":[{"node":{"title":"把 Mysql表 的自增计数器重置为1","number":19}}]}},"pageContext":{"category":{"name":"数据库","emoji":":zap:","description":"","isAnswerable":false},"name":"数据库","nlen":2}},
+    "staticQueryHashes": ["151096407","2861350382"]}
