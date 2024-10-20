@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-nav-category-tsx",
+    "path": "/category",
+    "result": {"pageContext":{"categoryList":[{"name":"数据库","emoji":":zap:","description":"","isAnswerable":false},{"name":"随记","emoji":":speech_balloon:","description":"随记","isAnswerable":false},{"name":"GitHub","emoji":":hash:","description":"","isAnswerable":false},{"name":"公告","emoji":":mega:","description":"GitHub Discussions 指南：使用 GitHub Discussions Blog 过程中的心得和实践","isAnswerable":false},{"name":"折腾","emoji":":hammer_and_wrench:","description":"","isAnswerable":false}]}},
+    "staticQueryHashes": ["151096407","2861350382"]}
