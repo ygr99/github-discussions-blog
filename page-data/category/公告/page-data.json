@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-tsx",
+    "path": "/category/公告",
+    "result": {"data":{"allDiscussionsJson":{"nodes":[{"node":{"title":"打算每天在 github-discussions-blog 上写写","number":8}},{"node":{"title":"github-discussions-blog 有人回复欸，我都快忘了这个了；这2天开始重用 FlowUs 笔记，有日记分享，这里可能不会咋用了","number":12}},{"node":{"title":"其他 GitHub Discussions 站点","number":9}},{"node":{"title":"Welcome to github-discussions-blog !（基于 GitHub Discussions 的站点）","number":2}},{"node":{"title":"调整首页 文章 item 样式","number":4}},{"node":{"title":"rgd.yml","number":1}}]}},"pageContext":{"category":{"name":"公告","emoji":":mega:","description":"GitHub Discussions 指南：使用 GitHub Discussions Blog 过程中的心得和实践","isAnswerable":false},"name":"公告","nlen":2}},
+    "staticQueryHashes": ["151096407","2861350382"]}
