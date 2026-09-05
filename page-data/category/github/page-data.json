@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-tsx",
+    "path": "/category/github",
+    "result": {"data":{"allDiscussionsJson":{"nodes":[{"node":{"title":"GitHub 项目回退到之前的某个版本","number":13}}]}},"pageContext":{"category":{"name":"GitHub","emoji":":hash:","description":"","isAnswerable":false},"name":"GitHub","nlen":2}},
+    "staticQueryHashes": ["151096407","2861350382"]}

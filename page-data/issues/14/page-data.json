@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-issues-tsx",
+    "path": "/issues/14",
+    "result": {"data":{"issuesJson":{"id":"e53a868e-0716-563c-a031-4f3f0b207fe7","title":"Vivaldi 浏览器 Bug 好多","number":14,"bodyHTML":"<p dir=\"auto\"><strong>Vivaldi 浏览器 Bug 好多</strong></p>","updatedAt":"2023-12-10T08:46:43Z","upvoteCount":0,"author":{"login":"ygr99","avatarUrl":"https://avatars.githubusercontent.com/u/91876454?u=052cc43185ad921a4802c6778d5af7f49bc96c14&v=4","url":"https://github.com/ygr99"},"category":{"isAnswerable":false,"name":"随记","emoji":":speech_balloon:"},"labels":{"edges":[]},"comments":{"edges":[]}}},"pageContext":{"number":14,"previous":{"title":"2024年1月新番最全版收看指南（共57部附时间和介绍）","number":15},"next":{"title":"GitHub 项目回退到之前的某个版本","number":13}}},
+    "staticQueryHashes": ["151096407","2861350382"]}

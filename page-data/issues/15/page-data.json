@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-issues-tsx",
+    "path": "/issues/15",
+    "result": {"data":{"issuesJson":{"id":"11e70fb5-9c65-5c06-b9b1-05a8fca3e2b0","title":"2024年1月新番最全版收看指南（共57部附时间和介绍）","number":15,"bodyHTML":"<p dir=\"auto\">原文链接：<a href=\"https://mp.weixin.qq.com/s/j7hq-xIqHK9ZYfSYJ25EQA\" rel=\"nofollow\">https://mp.weixin.qq.com/s/j7hq-xIqHK9ZYfSYJ25EQA</a></p>\n<p dir=\"auto\">《憧憬成为魔法少女》<br>\n《香格里拉・开拓异境~粪作猎手挑战神作》<br>\n《秒杀外挂太强了，异世界的家伙们根本就不是对手》</p>","updatedAt":"2024-01-12T04:13:01Z","upvoteCount":0,"author":{"login":"ygr99","avatarUrl":"https://avatars.githubusercontent.com/u/91876454?u=052cc43185ad921a4802c6778d5af7f49bc96c14&v=4","url":"https://github.com/ygr99"},"category":{"isAnswerable":false,"name":"随记","emoji":":speech_balloon:"},"labels":{"edges":[]},"comments":{"edges":[]}}},"pageContext":{"number":15,"previous":{"title":"四字韵律：日志杂记模块新命名(AI)","number":17},"next":{"title":"Vivaldi 浏览器 Bug 好多","number":14}}},
+    "staticQueryHashes": ["151096407","2861350382"]}
