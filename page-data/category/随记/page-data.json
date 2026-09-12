@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-tsx",
+    "path": "/category/随记",
+    "result": {"data":{"allDiscussionsJson":{"nodes":[{"node":{"title":"油猴脚本：GitHubContributionsSelectThisYear","number":18}},{"node":{"title":"手机 GitHub 使用","number":16}},{"node":{"title":"四字韵律：日志杂记模块新命名(AI)","number":17}},{"node":{"title":"2024年1月新番最全版收看指南（共57部附时间和介绍）","number":15}},{"node":{"title":"Vivaldi 浏览器 Bug 好多","number":14}},{"node":{"title":"阿里云服务器带宽多少如何查看?","number":11}},{"node":{"title":"夜猫子生活揭秘：我连续两年凌晨3点入眠的日常","number":10}},{"node":{"title":"连续来图书馆3周了；但看似很努力，其实没学到什么东西！","number":7}},{"node":{"title":"回归内容本身：使用 GitHub 讨论构建个人博客","number":5}}]}},"pageContext":{"category":{"name":"随记","emoji":":speech_balloon:","description":"随记","isAnswerable":false},"name":"随记","nlen":2}},
+    "staticQueryHashes": ["151096407","2861350382"]}
