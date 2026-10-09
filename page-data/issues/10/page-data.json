@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-issues-tsx",
+    "path": "/issues/10",
+    "result": {"data":{"issuesJson":{"id":"65e6ea74-6939-5f24-8c26-15dd9ca25800","title":"夜猫子生活揭秘：我连续两年凌晨3点入眠的日常","number":10,"bodyHTML":"<p dir=\"auto\">熬夜，刷手机！</p>","updatedAt":"2023-11-13T04:08:10Z","upvoteCount":0,"author":{"login":"ygr99","avatarUrl":"https://avatars.githubusercontent.com/u/91876454?u=052cc43185ad921a4802c6778d5af7f49bc96c14&v=4","url":"https://github.com/ygr99"},"category":{"isAnswerable":false,"name":"随记","emoji":":speech_balloon:"},"labels":{"edges":[]},"comments":{"edges":[]}}},"pageContext":{"number":10,"previous":{"title":"阿里云服务器带宽多少如何查看?","number":11},"next":{"title":"其他 GitHub Discussions 站点","number":9}}},
+    "staticQueryHashes": ["151096407","2861350382"]}
