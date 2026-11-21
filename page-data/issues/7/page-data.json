@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-issues-tsx",
+    "path": "/issues/7",
+    "result": {"data":{"issuesJson":{"id":"0139313f-8e32-5100-b6e4-af2d1dce8167","title":"连续来图书馆3周了；但看似很努力，其实没学到什么东西！","number":7,"bodyHTML":"<p dir=\"auto\">第一周：用户中心项目 - 鱼皮<br>\n跟着七期视频来的，每天一期，差不多能完成！但是没部署！</p>\n<p dir=\"auto\">第二周：算法❌Redis❌<br>\n算法集中学了2天，太难了，就去学Redis了，看了几天视频！这周是很颓废的</p>\n<p dir=\"auto\">第三周 API开放平台项目 - 鱼皮<br>\n前面几期跟着视频敲前后端项目，后面就光看视频了！</p>","updatedAt":"2023-11-12T13:07:23Z","upvoteCount":0,"author":{"login":"ygr99","avatarUrl":"https://avatars.githubusercontent.com/u/91876454?u=052cc43185ad921a4802c6778d5af7f49bc96c14&v=4","url":"https://github.com/ygr99"},"category":{"isAnswerable":false,"name":"随记","emoji":":speech_balloon:"},"labels":{"edges":[]},"comments":{"edges":[]}}},"pageContext":{"number":7,"previous":{"title":"其他 GitHub Discussions 站点","number":9},"next":{"title":"基于 GitHub Discussions 的博客站点（简约，便捷）：GG 教程","number":6}}},
+    "staticQueryHashes": ["151096407","2861350382"]}
