@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-issues-tsx",
+    "path": "/issues/2",
+    "result": {"data":{"issuesJson":{"id":"02636505-3278-585e-98d0-697cb3162aaf","title":"Welcome to github-discussions-blog !（基于 GitHub Discussions 的站点）","number":2,"bodyHTML":"<p dir=\"auto\">项目来自：<a href=\"https://github.com/lencx/gg\">lencx/gg: 🦄 GG (Gatsby + GitHub) - A gatsby website builder based on github discussions</a></p>","updatedAt":"2023-11-09T07:49:26Z","upvoteCount":0,"author":{"login":"ygr99","avatarUrl":"https://avatars.githubusercontent.com/u/91876454?u=052cc43185ad921a4802c6778d5af7f49bc96c14&v=4","url":"https://github.com/ygr99"},"category":{"isAnswerable":false,"name":"公告","emoji":":mega:"},"labels":{"edges":[]},"comments":{"edges":[]}}},"pageContext":{"number":2,"previous":{"title":"回归内容本身：使用 GitHub 讨论构建个人博客","number":5},"next":{"title":"调整首页 文章 item 样式","number":4}}},
+    "staticQueryHashes": ["151096407","2861350382"]}
